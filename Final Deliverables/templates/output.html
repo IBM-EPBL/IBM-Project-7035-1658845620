@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.header{
+		background: linear-gradient( white);
+		background:-webkit-linear-gradient( white);
+		background:-moz-linear-gradient( white);
+		background:-o-linear-gradient( white);
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100px;
+		text-align: center;
+		text-transform: capitalize;
+	}
+	.log_img
+	{
+	height: 650px;
+	margin-top: 0px;
+	background-image: url("../static/22.jpeg");
+	
+	}
+
+	.app {
+		height: 500px;
+		width: 600px;
+		background-color: rgba(0, 0, 0, 0.945);
+		margin: 100px auto ;
+		opacity: .7;
+		color: white;
+		padding: 20px;
+	}
+	</style>
+	<title> Classification results</title>
+</head>
+<body>
+	<div>
+		<header class="header">
+		
+			<h1>The Application result </h1> 
+		
+		</header>
+	</div>
+	<div class="log_img">
+	<div class="app">
+		<section>
+	<table align="center">	
+		<th>
+	<h1> Your information has been Submitted Please wait </h1>
+	<table align="center"> 
+        <th>
+    
+	{% if output== 1 %}
+    <br><br>
+    <h1 style="text-align: center; font-size: 35px;font-family: Lucida Console;">Congratulations 👍👍👍  You are eligible for the Loan 💰💰💰</h1>
+    <img src="../static/88.jfif",width=500px,height=600px>
+    <br><br>
+	
+    {% elif output==0 %}
+    <h1 style="text-align: center; font-size: 35px;font-family: Lucida Console;">We are sad 😔😔😔 to inform that you are not eligible for the Loan</h1>
+    <img src="../static/77.png",width=500px,height=600px>
+	{% endif %}
+    </th>
+    </table>
+
+	</th>
+	</table>
+		</section>
+	</div>
+
+	<div>
+		<footer>
+			
+		</footer>
+	</div>
+</div>
+
+</body>
+</html>
